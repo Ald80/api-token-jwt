@@ -1,7 +1,7 @@
 from .session_database import get_db, get_session
-from ..models.pais import Pais
-from ..models.token import Token
-from ..models.usuario import Usuario
+from models.pais import Pais
+from models.token import Token
+from models.usuario import Usuario
 from passlib.context import CryptContext
 
 pwd_context = CryptContext(schemes=['bcrypt'], deprecated='auto')

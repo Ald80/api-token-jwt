@@ -9,7 +9,6 @@ from sqlalchemy.exc import IntegrityError
 DATABASE_URL = "postgresql://postgres:123@localhost/postgres"
 engine = create_engine(DATABASE_URL, echo=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-# https://chat.openai.com/c/7bdf2a4f-e30e-491f-9689-7cffa7c5fc17
 # Modelo do banco de dados
 Base = declarative_base()
 
